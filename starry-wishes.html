@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFF9FC">
+  <title>Starry Wishes • Happy Birthday Zebaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/transition.css">
+  <link rel="stylesheet" href="css/starry-wishes.css">
+</head>
+<body>
+  <main class="wishes-page">
+    <div class="sky-glow glow-one" aria-hidden="true"></div>
+    <div class="sky-glow glow-two" aria-hidden="true"></div>
+    <div class="star-field" id="starField" aria-hidden="true"></div>
+    <div class="shooting-star shooting-one" aria-hidden="true"></div>
+    <div class="shooting-star shooting-two" aria-hidden="true"></div>
+
+    <section class="wishes-shell">
+      <header class="wishes-heading">
+        <p class="eyebrow">A little universe, made for you</p>
+        <h1>STARRY WISHES</h1>
+        <p class="intro">Four wishes are waiting from someone who cares about you. The other four are yours to write. Add your words, then watch all eight wishes become one little constellation.</p>
+      </header>
+
+      <section class="write-card" id="writeCard">
+        <div class="write-heading">
+          <span class="write-icon" aria-hidden="true">✧</span>
+          <div>
+            <p class="section-kicker">YOUR TURN, ZEBAA</p>
+            <h2>Write four wishes for your year ahead</h2>
+            <p>They can be dreams, promises, hopes, or anything your heart wants to say.</p>
+          </div>
+        </div>
+        <form id="wishForm">
+          <div class="wish-input-grid">
+            <label class="wish-input"><span>Wish 01</span><textarea maxlength="180" required placeholder="One thing you hope to experience..."></textarea></label>
+            <label class="wish-input"><span>Wish 02</span><textarea maxlength="180" required placeholder="Something you want to achieve..."></textarea></label>
+            <label class="wish-input"><span>Wish 03</span><textarea maxlength="180" required placeholder="A little happiness you wish for..."></textarea></label>
+            <label class="wish-input"><span>Wish 04</span><textarea maxlength="180" required placeholder="Anything your heart wishes for..."></textarea></label>
+          </div>
+          <div class="form-footer">
+            <p>Take your time. These words are yours to keep.</p>
+            <button class="reveal-button" type="submit">Create my constellation <span aria-hidden="true">✦</span></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="constellation-card" id="constellationCard" hidden aria-label="Eight birthday wishes in a constellation">
+        <div class="constellation-topline">
+          <span>YOUR LITTLE CONSTELLATION</span>
+          <span id="wishProgress">0 / 8 stars discovered</span>
+        </div>
+        <p class="constellation-instruction">Tap each star to discover a wish. Four are written by you, and four are little wishes from me.</p>
+        <div class="constellation" id="constellation">
+          <svg class="constellation-lines" viewBox="0 0 600 360" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M72 95 L190 55 L280 145 L410 75 L520 150 M190 55 L160 245 L280 145 L370 275 L520 150 M280 145 L430 205" />
+          </svg>
+          <button class="star-point star-1" data-wish="0" aria-label="Discover wish 1"><span>✦</span></button>
+          <button class="star-point star-2" data-wish="1" aria-label="Discover wish 2"><span>✧</span></button>
+          <button class="star-point star-3" data-wish="2" aria-label="Discover wish 3"><span>✦</span></button>
+          <button class="star-point star-4" data-wish="3" aria-label="Discover wish 4"><span>✧</span></button>
+          <button class="star-point star-5" data-wish="4" aria-label="Discover wish 5"><span>✦</span></button>
+          <button class="star-point star-6" data-wish="5" aria-label="Discover wish 6"><span>✧</span></button>
+          <button class="star-point star-7" data-wish="6" aria-label="Discover wish 7"><span>✦</span></button>
+          <button class="star-point star-8" data-wish="7" aria-label="Discover wish 8"><span>✧</span></button>
+          <div class="constellation-center" aria-hidden="true">♡</div>
+        </div>
+        <div class="wish-display" id="wishDisplay" aria-live="polite">
+          <span class="wish-display-star" aria-hidden="true">✦</span>
+          <p class="wish-display-label" id="wishLabel">A LITTLE WISH IS WAITING</p>
+          <p class="wish-display-text" id="wishText">Choose a glowing star and let its wish find you.</p>
+        </div>
+        <div class="wishes-footer">
+          <p>Eight wishes. One constellation. A whole sky of possibilities.</p>
+          <button class="last-wish-button" id="lastWishButton" type="button" disabled>Continue to your surprise <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+      <p class="bottom-note">A little universe, made with care, just for you ✦</p>
+    </section>
+  </main>
+
+  <div id="transition" aria-hidden="true">
+    <div class="transition-glow"></div>
+    <div class="transition-text"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/starry-wishes.js"></script>
+</body>
+</html>

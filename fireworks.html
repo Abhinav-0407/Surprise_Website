@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrate • Zebaa 🎆</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/legacy-global.css">
+    <link rel="stylesheet" href="css/transition.css">
+    <link rel="stylesheet" href="css/fireworks.css">
+</head>
+
+<body>
+
+<section id="fireworks">
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Background Effects -->
+    <div class="glow"></div>
+    <div class="stars"></div>
+
+    <div class="container">
+
+        <!-- Photos Side by Side -->
+        <div class="photo-showcase">
+
+            <div class="photo-frame left-photo">
+                <img src="images/photo1.jpg" alt="Zebaa Photo 1">
+            </div>
+
+            <div class="photo-frame right-photo">
+                <img src="images/photo2.jpg" alt="Zebaa Photo 2">
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="divider">
+            <span></span>
+            ✦
+            <span></span>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="playlist-section">
+
+            <h2 class="playlist-title">
+                Songs That Reminded Me Of You & Your Favourites
+            </h2>
+
+            <p class="playlist-subtitle">
+                Every song here carries a memory, a feeling, or a moment that reminded me of you.
+            </p>
+
+            <div class="playlist">
+
+                <!-- Song 1 -->
+                <div class="song-card">
+
+                    <button class="play-btn" data-audio="song1">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <div class="song-info">
+                        <h3>Chahun Main Ya Naa</h3>
+                        <p>Arijit Singh & Palak Muchhal</p>
+                    </div>
+
+                    <a class="spotify-btn"
+                       href="https://open.spotify.com/track/6UgcN95w7vQxkR8sEFmwHG?si=f245d68f21114dba"
+                       target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+
+                </div>
+
+                <!-- Song 2 -->
+                <div class="song-card">
+
+                    <button class="play-btn" data-audio="song2">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <div class="song-info">
+                        <h3>Piche Tere</h3>
+                        <p>Kunwarr & Dishant</p>
+                    </div>
+
+                    <a class="spotify-btn"
+                       href="https://open.spotify.com/track/4ZWoJ4tRi74mHHnItB3k9h?si=c262783dcb35447e"
+                       target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+
+                </div>
+
+                <!-- Song 3 -->
+                <div class="song-card">
+
+                    <button class="play-btn" data-audio="song3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <div class="song-info">
+                        <h3>Tum Ho Toh</h3>
+                        <p>Vishal Mishra & Hansika Pareek</p>
+                    </div>
+
+                    <a class="spotify-btn"
+                       href="https://open.spotify.com/track/5nMv7iOp4NxJaWx0t8361M?si=8b2de62496d748f0"
+                       target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+
+                </div>
+
+                <!-- Song 4 -->
+                <div class="song-card">
+
+                    <button class="play-btn" data-audio="song4">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <div class="song-info">
+                        <h3>Reflections</h3>
+                        <p>The Neighbourhood</p>
+                    </div>
+
+                    <a class="spotify-btn"
+                       href="https://open.spotify.com/track/2xql0pid3EUwW38AsywxhV?si=cabba6559e7342e2"
+                       target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Final Button -->
+        <div class="final-section">
+
+            <button id="continueBtn" class="btn final-btn">
+                Final Surprise
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Audio Files -->
+<audio id="song1">
+    <source src="audio/Chahun_Main_Ya_Naa.mp3" type="audio/mp3">
+</audio>
+
+<audio id="song2">
+    <source src="audio/Piche_Tere.mp3" type="audio/mp3">
+</audio>
+
+<audio id="song3">
+    <source src="audio/Tum_Ho_Toh.mp3" type="audio/mp3">
+</audio>
+
+<audio id="song4">
+    <source src="audio/Reflections.mp3" type="audio/mp3">
+</audio>
+
+<!-- Transition -->
+<div id="transition">
+    <div class="transition-glow"></div>
+    <div class="transition-text"></div>
+</div>
+
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="js/legacy-transition.js"></script>
+<script src="js/fireworks.js"></script>
+
+</body>
+</html>

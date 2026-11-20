@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make A Wish • Zebaa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/legacy-global.css">
+    <link rel="stylesheet" href="css/transition.css">
+    <link rel="stylesheet" href="css/cake.css">
+</head>
+
+<body>
+
+<section id="cake">
+
+    <div class="cake-glow"></div>
+    <div class="petals"></div>
+    <div class="stars"></div>
+
+    <!-- Hero 1 -->
+    <section class="cake-intro">
+        <div class="intro-content">
+            <p class="subtitle">A Little Wish Before The Celebration</p>
+            <h1 class="title">MAKE A WISH</h1>
+            <p class="wish-text">
+                Close your eyes for a moment...<br>
+                Make a beautiful wish, and may every wish you make today come true.
+            </p>
+
+            <div class="divider">
+                <span></span>
+                ✦
+                <span></span>
+            </div>
+
+            <p class="scroll-hint">The celebration is waiting below</p>
+        </div>
+    </section>
+
+    <!-- Hero 2 -->
+    <section class="cake-stage">
+
+        <div class="celebration-card">
+
+            <div class="card-top">
+
+                <div class="left-decor">
+                    <div class="coke-group">
+                        <img src="images/diet-coke.png" alt="Diet Coke" class="coke coke-back">
+                        <img src="images/diet-coke.png" alt="Diet Coke" class="coke coke-front">
+                    </div>
+                </div>
+
+                <div class="cake-center">
+                    <div class="cake-scene">
+
+                        <div class="candles">
+                            <div class="candle"><div class="wick"></div><div class="flame"></div></div>
+                            <div class="candle"><div class="wick"></div><div class="flame"></div></div>
+                            <div class="candle"><div class="wick"></div><div class="flame"></div></div>
+                        </div>
+
+                        <div class="cake">
+                            <div class="cake-top"></div>
+                            <div class="ganache-drips"></div>
+
+                            <div class="cake-swirls">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+
+                            <div class="layer top"></div>
+                            <div class="cream cream-1"></div>
+                            <div class="layer middle"></div>
+                            <div class="cream cream-2"></div>
+                            <div class="layer bottom"></div>
+
+                            <div class="cake-slice">
+                                <div class="slice-top"></div>
+                                <div class="slice-layer top"></div>
+                                <div class="slice-cream cream-1"></div>
+                                <div class="slice-layer middle"></div>
+                                <div class="slice-cream cream-2"></div>
+                                <div class="slice-layer bottom"></div>
+                            </div>
+
+                            <div class="cake-plate"></div>
+                        </div>
+
+                        <div class="knife">
+                            <div class="knife-handle"></div>
+                            <div class="knife-blade"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="right-decor">
+                    <div class="lily-group">
+                        <img src="images/Lily-Bookey.png" alt="Lily Bouquet" class="lily lily-back">
+                        <img src="images/Lily-Bookey.png" alt="Lily Bouquet" class="lily lily-front">
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="celebration-message">
+                Today is about happiness, beautiful memories, and celebrating someone truly special.
+            </p>
+
+            <div class="button-group">
+                <button id="blowBtn" class="btn primary-btn">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    Blow Out The Candles
+                </button>
+
+                <button id="cutBtn" class="btn secondary-btn">
+                    <i class="fa-solid fa-utensils"></i>
+                    Cut The Cake
+                </button>
+
+                <button id="continueBtn" class="btn primary-btn">
+                    Continue To The Surprise
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<div id="transition">
+    <div class="transition-glow"></div>
+    <div class="transition-text"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="js/legacy-transition.js"></script>
+<script src="js/cake.js"></script>
+
+</body>
+</html>

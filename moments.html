@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moments • Happy Birthday Zebaa ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/transition.css">
+    <link rel="stylesheet" href="css/moments.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+     MOMENTS SECTION
+============================ -->
+
+<section id="moments">
+
+    <!-- Background Glow -->
+    <div class="glow"></div>
+
+    <!-- Animated Stars -->
+    <div class="stars">
+
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+
+    </div>
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            A Few Special Memorable
+        </p>
+
+        <h1 class="section-title">
+            MOMENTS
+        </h1>
+
+        <div class="divider">
+
+            <span></span>
+
+            ✦
+
+            <span></span>
+
+        </div>
+
+        <!-- Envelope cards: the original card titles and labels are preserved -->
+        <div class="moment-list">
+
+            <button class="moment-card envelope-card" id="badmintonCard" type="button" aria-label="Open Badminton Memories letter">
+                <span class="envelope-scene" aria-hidden="true">
+                    <span class="envelope-letter"><span> A little memory, sealed with care </span></span>
+                    <span class="envelope-back"></span>
+                    <span class="envelope-front"></span>
+                    <span class="envelope-flap"></span>
+                    <span class="envelope-seal">♥</span>
+                </span>
+                <span class="card-icon"><i class="fa-solid fa-table-tennis-paddle-ball"></i></span>
+                <span class="card-title">Badminton Memories</span>
+                <span class="card-prompt">Click to Read</span>
+            </button>
+
+            <button class="moment-card envelope-card" id="admireCard" type="button" aria-label="Open Things I Admire About You letter">
+                <span class="envelope-scene" aria-hidden="true">
+                    <span class="envelope-letter"><span> A little memory, sealed with care </span></span>
+                    <span class="envelope-back"></span>
+                    <span class="envelope-front"></span>
+                    <span class="envelope-flap"></span>
+                    <span class="envelope-seal">♥</span>
+                </span>
+                <span class="card-icon"><i class="fa-solid fa-star"></i></span>
+                <span class="card-title">Midnight Maths Class</span>
+                <span class="card-prompt">Click to Read</span>
+            </button>
+
+        </div>
+
+        <!-- Continue -->
+
+        <button class="btn" id="continueBtn" disabled>
+
+            Continue
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     LETTER MODAL
+============================ -->
+
+<div id="letterModal">
+
+    <div class="letter-box">
+        <!-- Decorative ribbon -->
+        <div class="ribbon"></div>
+
+        <!-- Teddy decoration -->
+        <div class="letter-teddy">🧸</div>
+        
+
+        <button id="closeLetter">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <h2 id="letterHeading"></h2>
+        <div class="divider">
+
+            <span></span>
+
+            ✦
+
+            <span></span>
+
+        </div>
+
+        <div id="letterContent"></div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     PAGE TRANSITION
+============================ -->
+
+<div id="transition">
+
+    <div class="transition-glow"></div>
+
+    <div class="transition-text"></div>
+
+</div>
+
+<!-- GSAP -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<!-- Transition -->
+
+<script src="js/transition.js"></script>
+
+<!-- Moments -->
+
+<script src="js/moments.js"></script>
+
+</body>
+
+</html>

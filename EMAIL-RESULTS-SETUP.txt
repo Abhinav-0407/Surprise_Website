@@ -1,0 +1,39 @@
+BIRTHDAY QUIZ EMAIL RESULTS — SETUP
+
+The quiz is configured to send the score and all 11 selected answers to:
+abhinavyadav4070@gmail.com
+
+IMPORTANT
+Email delivery is not active until you deploy the included Google Apps Script and paste its Web App URL into:
+js/birthday-quiz.js
+
+1. Open https://script.google.com/ while signed in to the Google account you control.
+2. Create a new project.
+3. Replace the editor contents with the code in EMAIL-RESULTS-APPS-SCRIPT.gs.
+4. Save the project.
+5. Click Deploy > New deployment.
+6. Select Web app.
+7. Set Execute as: Me.
+8. Set Who has access: Anyone.
+9. Deploy and authorize the requested permissions. Google will ask permission to send email from your account.
+10. Copy the Web app URL ending in /exec.
+11. Open js/birthday-quiz.js and replace:
+    PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE
+    with the URL you copied. Keep the URL inside the quotation marks.
+12. Save and upload the updated website files.
+
+The quiz does not ask Zebaa for an email address or require her to sign in.
+Before the quiz, the page tells her that Abhinav will receive her answers and score.
+
+EMAIL CONTENT
+- Score out of 9 scored questions
+- All 11 selected answers
+- Correct answers for the 9 scored questions
+- Both personal-response answers (not marked right or wrong)
+- Submission date and time
+
+TESTING
+After deployment and adding the URL, submit one test run yourself. Check the inbox and Spam folder. If you edit the Apps Script later, redeploy the web app so the live deployment uses the latest code.
+
+PRIVACY / ACCESS
+Anyone with the deployed Web App URL can send a submission to this endpoint. Do not publish the Apps Script URL separately or reuse this endpoint for unrelated forms. The script sends only quiz results; it does not collect the participant's email address.

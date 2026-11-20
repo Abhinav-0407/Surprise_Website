@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFF9FC">
+  <title>Memory Vault • Happy Birthday Zebaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/transition.css">
+  <link rel="stylesheet" href="css/memory-vault.css">
+</head>
+<body>
+  <main class="vault-page">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="petal-field" aria-hidden="true"></div>
+
+    <section class="vault-intro" id="vaultIntro" aria-labelledby="vaultTitle">
+      <div class="vault-emblem" aria-hidden="true">
+        <span class="emblem-ring"></span>
+        <span class="emblem-friendly">🧸</span>
+        <span class="emblem-key">✦</span>
+      </div>
+      <p class="eyebrow">A little collection of moments</p>
+      <h1 id="vaultTitle">MEMORY VAULT</h1>
+      <p class="intro-copy">A place for the moments worth keeping.</p>
+      <button class="open-vault-btn" id="openVault" type="button">
+        <span class="button-friendly" aria-hidden="true">😊</span>
+        <span>Open Memory Vault</span>
+        <span class="button-arrow" aria-hidden="true">→</span>
+      </button>
+      <div class="intro-sparkle" aria-hidden="true">✧</div>
+    </section>
+
+    <section class="gallery-section" id="gallerySection" aria-label="Photo and video gallery" hidden>
+      <div class="gallery-top">
+        <p class="eyebrow">Saved moments</p>
+        <h2>MEMORIES</h2>
+        <div class="title-rule" aria-hidden="true"><span></span>✦<span></span></div>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <div class="gallery-footer">
+        <button class="back-btn" id="backToIntro" type="button">← Back</button>
+        <button class="continue-btn" id="continueBtn" type="button">Continue <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <button class="viewer-close" id="viewerClose" type="button" aria-label="Close viewer">×</button>
+    <button class="viewer-nav viewer-prev" id="viewerPrev" type="button" aria-label="Previous item">‹</button>
+    <div class="viewer-media" id="viewerMedia"></div>
+    <button class="viewer-nav viewer-next" id="viewerNext" type="button" aria-label="Next item">›</button>
+    <div class="viewer-counter" id="viewerCounter" aria-live="polite"></div>
+  </div>
+
+  <div id="transition" aria-hidden="true">
+    <div class="transition-glow"></div>
+    <div class="transition-text"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/memory-vault.js"></script>
+</body>
+</html>

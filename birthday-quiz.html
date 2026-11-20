@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFF9FC">
+  <title>Birthday Quiz • Happy Birthday Zebaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/transition.css">
+  <link rel="stylesheet" href="css/birthday-quiz.css">
+</head>
+<body>
+  <main class="quiz-page">
+    <div class="quiz-petals" aria-hidden="true"></div>
+    <section class="quiz-shell" aria-live="polite">
+      <header class="quiz-heading">
+        <p class="eyebrow">A little challenge made with care</p>
+        <h1>HOW WELL DO YOU KNOW US?</h1>
+        <p class="intro">11 questions, a few memories, and a little fun. Let's see what you remember!</p>
+      </header>
+
+      <section class="quiz-panel" id="quizPanel">
+        <div class="quiz-progress-row">
+          <span id="questionCount">QUESTION 01 / 11</span>
+          <span id="progressPercent">8%</span>
+        </div>
+        <div class="progress-track"><span id="progressFill"></span></div>
+        <p class="question-category" id="questionCategory">ABOUT ABHINAV</p>
+        <h2 id="questionText">Loading your first question...</h2>
+        <div class="answer-list" id="answerList"></div>
+        <div class="quiz-controls">
+          <button class="back-button" id="backButton" type="button" disabled>← Back</button>
+          <button class="next-button" id="nextButton" type="button" disabled>Next question →</button>
+        </div>
+        <p class="answer-note">Your answers will stay secret until the very end. ♡</p>
+        <p class="answer-note">❤️ Before you begin, remember: Abhinav will know all your answers and your final score, so answer honestly! ❤️</p>
+      </section>
+
+      <section class="result-panel" id="resultPanel" hidden>
+        <div class="result-icon" aria-hidden="true">🎀</div>
+        <p class="eyebrow">That's the end!</p>
+        <h2 id="resultTitle">Your result</h2>
+        <p class="result-score" id="resultScore"></p>
+        <p class="result-copy" id="resultCopy"></p>
+        <p class="email-status" id="emailStatus" role="status" aria-live="polite"></p>
+        <div class="answer-review" id="answerReview"></div>
+        <button class="restart-button" id="restartButton" type="button">Try again ↻</button>
+        <button class="continue-button" id="continueButton" type="button">Continue the surprise →</button>
+      </section>
+    </section>
+  </main>
+
+  <div id="transition" aria-hidden="true">
+    <div class="transition-glow"></div>
+    <div class="transition-text"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/birthday-quiz.js"></script>
+</body>
+</html>

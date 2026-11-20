@@ -1,0 +1,20 @@
+PROJECT MIDNIGHT GOLD 2.0 — STARRY WISHES PAGE
+
+Files to add to your existing project:
+- starry-wishes.html                 -> project root
+- css/starry-wishes.css              -> css/
+- js/starry-wishes.js                -> js/
+
+The page expects the existing shared files:
+- css/global.css
+- css/transition.css
+- js/transition.js
+
+Navigation:
+- Birthday Quiz already points to starry-wishes.html.
+- The final button on Starry Wishes points to cake.html.
+
+The page contains 8 clickable stars. Each reveals one birthday wish.
+The final button stays disabled until all 8 wishes have been opened.
+
+Cake and Fireworks files are not included or modified.
